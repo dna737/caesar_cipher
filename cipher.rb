@@ -25,12 +25,12 @@ def regulate_ord(char_num)
     if char_num < 97 then 
         number = 122-char_num+96
         number.chr
-     elsif char_num > 122 then
+    elsif char_num > 122 then
         number = char_num-122+96
         number.chr
-     else
+    else
         char_num.chr
-     end
+    end
 end
 
 puts "Hi! please enter the word and the offset:"
