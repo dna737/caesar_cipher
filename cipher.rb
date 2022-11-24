@@ -1,7 +1,7 @@
 def caesar_cipher(word = "Hello world!", shift = 0)
     new_word = ""
     #array of characters:
-    arr = word.split('').each do |c|
+    word.split('').each do |c|
     if (c.ord >= 97 && c.ord <= 122) || (c.ord >= 65 && c.ord <= 90) then 
         if is_upper?(c) then 
             new_word += regulate_ord((c.downcase.ord+shift)).upcase
@@ -11,7 +11,7 @@ def caesar_cipher(word = "Hello world!", shift = 0)
     else
     new_word += c
     next
-end
+    end
 end
 new_word
 end
