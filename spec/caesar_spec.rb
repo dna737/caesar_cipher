@@ -10,4 +10,8 @@ describe "Caesar Cipher tests" do
   it "esdf with 27 shifts" do
     expect(caesar_cipher("esdf", 27)).to eql("fteg")
   end
+
+  it "pppp with 10218 shifts" do
+    expect(caesar_cipher("pppp", 10218)).to eql("pppp")
+  end
 end
