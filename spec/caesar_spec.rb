@@ -19,7 +19,11 @@ describe "Caesar Cipher tests" do
     expect(caesar_cipher("polo", 0)).to eql("polo")
   end
 
-  it "kekw with -10218" do
+  it "kekw with -10218 shifts" do
     expect(caesar_cipher("kekw", -10218)).to eql("kekw")
+  end
+
+  it "lastOne with -0 shifts" do
+    expect(caesar_cipher("lastOne", -0)).to eql("lastOne")
   end
 end
