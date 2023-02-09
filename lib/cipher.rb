@@ -32,8 +32,3 @@ def regulate_ord(char_num)
     char_num.chr
   end
 end
-
-puts "Hi! please enter the word and the offset:"
-word = gets.chomp
-number = gets.chomp.to_i
-puts "\nYour new word is #{caesar_cipher(word, number)}"
