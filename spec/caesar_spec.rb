@@ -1,4 +1,4 @@
-#Test cases for caesar cipher
+# Test cases for caesar cipher
 
 require_relative "../lib/cipher.rb"
 
